@@ -1,0 +1,34 @@
+main section h2{
+    text-align: center;
+    margin: 20px 0px;
+    border: 0.5px solid rgb(224, 224, 233);
+    padding: 5px 0px;  
+    box-shadow: 1px 1px 1px silver;  
+}
+
+.announcment-wrapper{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.announcment-item{
+    margin: 10px 0px;
+}
+
+.announcment-item video{
+    width: 200px;
+    height: 200px;
+}
+
+.announcment-item ul{
+    list-style-position: inside;
+}
+
+.announcment-item ul li{
+    border: 1px solid lightgrey;
+    padding: 5px;
+    width: 250px;
+    margin: 3px 0px;
+}
+

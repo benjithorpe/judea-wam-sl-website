@@ -5,9 +5,7 @@
 }
 
 html, body{
-    height: 100%;
-    width: 100%;
-    margin: 5px 0px;
+    margin: 2px 0px;
     font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
@@ -24,22 +22,21 @@ nav ul{
     font-family: monospace;
     font-size: 18px;
     list-style-type: none;
+    background-color: rgba(215, 226, 255, 0.5);
 }
 
 nav ul li {
     flex-basis: 150px;
     text-align: center;
-    background-color: lightgrey;
-    padding: 10px;
 }
 
 nav ul li:hover{
-    background-color: grey;
+    background-color: navy;
     box-shadow: 2px 2px 2px grey;
 }
 
 .active{
-    background-color: grey;
+    background-color: navy;
 }
 
 .active a{
@@ -49,6 +46,7 @@ nav ul li:hover{
 nav ul a{
     text-decoration: none;
     display: block;
+    padding: 10px 0px;
 }
 
 nav ul a:hover{
@@ -58,7 +56,6 @@ nav ul a:hover{
 
 /* MAIN CONTENTS */
 main{
-    min-height: 100%;
     width: 95%;
     margin: auto;
 }
