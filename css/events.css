@@ -17,8 +17,8 @@ main section h2{
 }
 
 .announcment-item video{
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: auto;
 }
 
 .announcment-item ul{

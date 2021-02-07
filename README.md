@@ -1,3 +1,3 @@
 # judea-wam-sl-website
-A website for Judea WAM Church
+A website for my church - Judea WAM Church
 
