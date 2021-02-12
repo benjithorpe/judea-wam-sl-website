@@ -4,26 +4,31 @@ h2{
     font-size: 30px;
 }
 
-.batch-wrapper{
+.executive-wrapper{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 10px 0px;
 }
 
-.batch-wrapper div{
+.executive-wrapper div{
     flex-basis: 200px;
-    padding: 5px 0px;
+    padding: 5px;
     border-radius: 5px;
+    margin: 5px;
 }
 
-.batch-wrapper div:hover{
-    box-shadow: 2px 2px 2px grey;
-}
-
-section div img{
-    width: 250px;
+.executive-wrapper img{
+    width: 200px;
     height: 200px;
-    border-radius: 10px;
+    border-radius: 50%;
+}
+
+.executive-wrapper figure{
+    text-align: center;
+}
+
+.executive-wrapper figcaption{
+    margin-top: 10px;
 }
 

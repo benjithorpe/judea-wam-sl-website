@@ -9,7 +9,7 @@ a:visited{
     color: blue;
 }
 
-html, body{
+body{
     margin: 2px 0px 0px 0px;
     font-family: 'Trebuchet MS', Arial, sans-serif;
 }
@@ -62,7 +62,7 @@ nav ul a:hover{
 
 /* MAIN CONTENTS */
 main{
-    width: 95%;
+    width: 97%;
     margin: auto;
 }
 
@@ -91,7 +91,8 @@ footer ul li{
 }
 
 footer section div{
-    flex-basis: 200px;
+    flex-basis: 250px;
+    margin: 10px;
 }
 
 .quick-links ul li{
