@@ -6,6 +6,10 @@ main section h2{
     box-shadow: 1px 1px 1px silver;  
 }
 
+.hide{
+    display: none;
+}
+
 .announcment-wrapper{
     display: flex;
     justify-content: space-around;
@@ -21,7 +25,7 @@ main section h2{
 .announcment-item{
     border-radius: 5px;
     flex-basis: 45%;
-    padding: 5px;
+    padding: 10px;
     margin: 5px;
     box-shadow: 4px 4px 3px lightgrey, -1px -1px 2px lightgrey;
 }
@@ -34,16 +38,25 @@ main section h2{
 
 .announcment-item ul li{
     border: 1px solid lightgrey;
-    padding: 5px;
-    width: 250px;
-    margin: 3px 0px;
+    border-radius: 5px;
+    height: 40px;
+    padding: 10px 5px;
+    margin: 5px 0px;
+}
+
+.announcment-item ul{
+    list-style-position: inside;
+}
+
+.announcment-item ul li:hover{
+    box-shadow: 2px 2px 2px grey;
+    text-indent: 20px;
 }
 
 
 @media screen and (max-width: 450px){
     .announcment-item{
         flex-basis: 100%;
-        /* box-shadow: 4px 4px 4px lightgrey, -2px -2px 3px lightgrey; */
     }
         
 } 
