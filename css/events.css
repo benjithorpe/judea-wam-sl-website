@@ -54,9 +54,21 @@ main section h2{
 }
 
 
+/* ============ MEDIA QUERIES ============= */
+
+@media screen and (max-width: 670px){
+    .other-notices div{
+        flex-basis: 100%;
+    }
+
+    .meetings ul li{
+        height: 60px;
+    }
+
+}
+
 @media screen and (max-width: 450px){
     .announcment-item{
         flex-basis: 100%;
     }
-        
 } 

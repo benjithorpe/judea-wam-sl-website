@@ -41,3 +41,12 @@ main section div{
     box-shadow: 6px 10px 5px grey;
 } 
 
+
+/* ============ MEDIA QUERIES ============= */
+
+@media screen and (max-width: 650px){
+    .image > img{
+        width: 100%;
+    }
+}
+

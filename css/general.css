@@ -16,10 +16,9 @@ body{
 
 /* NAVIGATION */
 nav{
-    background-color: white;
     position: sticky;
     top: 0px;
-    background-image: linear-gradient(to bottom, skyblue, darkgrey);
+    background-image: linear-gradient(to bottom, rgba(150, 132, 98, 0.8), rgba(230, 166, 71, 0.4));
 }
 
 nav ul{
@@ -37,12 +36,12 @@ nav ul li {
 }
 
 nav ul li:hover{
-    background-color: navy;
+    background-color: rgba(68, 68, 173, 0.6);
     box-shadow: 2px 2px 2px grey;
 }
 
 .active{
-    background-color: navy;
+    background-color: rgb(84, 84, 148);
 }
 
 .active a{
@@ -107,7 +106,7 @@ footer section div{
 
 .quick-links ul li:hover{
     text-indent: 10px;  
-    text-decoration: underline; 
+    border-bottom: 2px solid rgb(56, 91, 124);
 }
 
 .social-media ul li{
@@ -116,7 +115,8 @@ footer section div{
 }
 
 .social-media ul li a{
-    /* text-decoration: none; */
+    display: block;
+    text-decoration: none;
     font-size: 18px;
     color: rgb(31, 46, 247);
 }
@@ -126,4 +126,13 @@ footer section div{
     text-align: center;
     color: rgb(184, 178, 178);
     padding: 5px 0px;
+}
+
+/* ============ MEDIA QUERIES ============= */
+
+@media screen and (max-width: 450px){
+    nav ul{
+        /* display: flex; */
+        justify-content: center;
+    }
 }
