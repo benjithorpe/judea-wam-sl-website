@@ -4,66 +4,48 @@
     box-sizing: border-box;
 }
 
-/* keeps the default colors for all links */
-a:visited{
-    color: blue;
-}
-
 body{
     margin: 2px 0px 0px 0px;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: max-content auto max-content;
-    grid-template-areas: "nav"
-                         "main"
-                         "footer";
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
 }
 
 /* NAVIGATION */
 nav{
-    grid-area: nav;
     position: sticky;
     top: 0px;
-    background-color: white;
 }
-
+    
 nav ul{
+    background-color: #333;
+    overflow: hidden;
     display: flex;
     justify-content: flex-end;
     font-family: monospace;
     font-size: 18px;
     list-style-type: none;
-    background-color: rgba(215, 226, 255, 0.45);
 }
 
 nav ul li {
-    flex-basis: 20%;
-    text-align: center;
-}
-
-nav ul li:hover{
-    box-shadow: 2px 2px 2px grey;
-    background-color: rgb(42, 42, 143);
-    border-radius: 2px;
-}
-
-.active{
-    background-color: rgb(84, 84, 148);
+    flex: 0 1 10%;
 }
 
 .active a{
+    background-color: #4CAF50;
     color: white;
 }
 
 nav ul a{
-    text-decoration: none;
     display: block;
     padding: 15px 0px;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
 }
 
 nav ul a:hover{
-    color: white;
+    background-color: #ddd;
+    color: black;
 }
 
 
@@ -85,7 +67,7 @@ footer{
 
 footer h3{
     color: rgb(235, 235, 222);
-    margin-bottom: 10px;
+    margin: 20px 0px;
     text-align: center;
 }
 
@@ -106,7 +88,7 @@ footer ul li{
 
 footer section div{
     text-align: center;
-    flex-basis: 30%;
+    flex: 0 1 30%;
 }
 
 .address ul{
@@ -153,26 +135,22 @@ footer section div{
 
 
 
-
 /* ============ MEDIA QUERIES ============= */
-
-@media screen and (max-width: 460px){
-    nav ul{
-        justify-content: space-around;
-    }
-
+@media (max-width: 800px){
     nav ul li{
-        flex-basis: 25%;
+        flex: 1 1 auto;
     }
-
+}
+      
+@media screen and (max-width: 470px){
     footer section{
         display: flex;
         flex-direction: column;
     }
 
     footer section div{
-        flex-basis: 90%;
-        margin: 10px 0px;
+        flex: 1 1 95%;
+        margin: 10px auto;
     }
 
     footer section div h3{

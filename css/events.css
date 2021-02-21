@@ -1,7 +1,7 @@
 main section h2{
     text-align: center;
     margin: 20px 0px;
-    border: 0.5px solid rgb(224, 224, 233);
+    border: 1px solid rgb(224, 224, 233, 0.5);
     padding: 5px 0px;  
     box-shadow: 1px 1px 1px silver;  
 }
@@ -13,33 +13,33 @@ main section h2{
 .announcment-wrapper{
     display: flex;
     justify-content: space-around;
+    align-items: flex-start;
     flex-wrap: wrap;
 }
 
 .announcment-item h3{
-    font-size: 20px;
-    margin: 5px 0px;
+    font-size: 21px;
+    margin: 10px 0px;
     text-align: center;
 }
 
 .announcment-item{
     border-radius: 5px;
-    flex-basis: 45%;
+    flex: 1 1 47%;
     padding: 10px;
-    margin: 5px;
+    margin: 10px;
     box-shadow: 4px 4px 3px lightgrey, -1px -1px 2px lightgrey;
 }
 
 .announcment-item dd{
-    text-indent: 15px;
-    list-style-position: inside;
-    margin-bottom: 5px;
+    text-indent: 20px;
+    margin-bottom: 10px;
 }
 
 .announcment-item ul li{
     border: 1px solid lightgrey;
     border-radius: 5px;
-    height: 40px;
+    height: max-content;
     padding: 10px 5px;
     margin: 5px 0px;
 }
@@ -50,27 +50,18 @@ main section h2{
 
 .announcment-item ul li:hover{
     box-shadow: 2px 2px 2px grey;
-    text-indent: 20px;
+    text-indent: 10px;
 }
 
 
 /* ============ MEDIA QUERIES ============= */
 @media screen and (max-width: 770px){
-    /* nav ul{
-        justify-content: flex-end;
-    } */
-
     .other-notices div{
         flex-basis: 100%;
     }
-
-    .meetings ul li{
-        height: 60px;
-    }
-
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 470px){
     .announcment-item{
         flex-basis: 100%;
     }
