@@ -12,13 +12,20 @@ a:visited{
 body{
     margin: 2px 0px 0px 0px;
     font-family: 'Trebuchet MS', Arial, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content auto max-content;
+    grid-template-areas: "nav"
+                         "main"
+                         "footer";
 }
 
 /* NAVIGATION */
 nav{
+    grid-area: nav;
     position: sticky;
     top: 0px;
-    background-image: linear-gradient(to bottom, rgba(150, 132, 98, 0.8), rgba(230, 166, 71, 0.4));
+    background-color: white;
 }
 
 nav ul{
@@ -27,17 +34,18 @@ nav ul{
     font-family: monospace;
     font-size: 18px;
     list-style-type: none;
-    background-color: rgba(215, 226, 255, 0.5);
+    background-color: rgba(215, 226, 255, 0.45);
 }
 
 nav ul li {
-    flex-basis: 150px;
+    flex-basis: 20%;
     text-align: center;
 }
 
 nav ul li:hover{
-    background-color: rgba(68, 68, 173, 0.6);
     box-shadow: 2px 2px 2px grey;
+    background-color: rgb(42, 42, 143);
+    border-radius: 2px;
 }
 
 .active{
@@ -51,7 +59,7 @@ nav ul li:hover{
 nav ul a{
     text-decoration: none;
     display: block;
-    padding: 10px 0px;
+    padding: 15px 0px;
 }
 
 nav ul a:hover{
@@ -61,37 +69,48 @@ nav ul a:hover{
 
 /* MAIN CONTENTS */
 main{
+    /* display: none; */
+    grid-area: main;
     width: 97%;
-    margin: 30px auto;
+    margin: auto;
 }
 
 
 /* FOOTER */
 footer{
-    background-color: #303036;
+    grid-area: footer;
+    background-color: rgb(49, 48, 63);
     color: white;
-    position: relative;
 }
 
 footer h3{
+    color: rgb(235, 235, 222);
     margin-bottom: 10px;
+    text-align: center;
 }
 
 footer section{
     display: flex;
     justify-content: space-around;
-    padding: 10px 0px;
     flex-wrap: wrap;
+    margin: 15px 0px;
+}
+
+footer ul{
+    list-style-type: none;
 }
 
 footer ul li{
     padding: 5px 0px;
-    list-style-type: none;
 }
 
 footer section div{
-    flex-basis: 250px;
-    margin: 10px;
+    text-align: center;
+    flex-basis: 30%;
+}
+
+.address ul{
+    font-style: italic;
 }
 
 .quick-links ul li{
@@ -105,8 +124,7 @@ footer section div{
 }
 
 .quick-links ul li:hover{
-    text-indent: 10px;  
-    border-bottom: 2px solid rgb(56, 91, 124);
+    text-indent: 20px; 
 }
 
 .social-media ul li{
@@ -118,7 +136,12 @@ footer section div{
     display: block;
     text-decoration: none;
     font-size: 18px;
-    color: rgb(31, 46, 247);
+    color: rgb(135, 140, 212);
+}
+
+.social-media ul li a:hover{
+    font-style: italic;
+    text-decoration: underline;
 }
 
 .copyright{
@@ -128,11 +151,31 @@ footer section div{
     padding: 5px 0px;
 }
 
+
+
+
 /* ============ MEDIA QUERIES ============= */
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 460px){
     nav ul{
-        /* display: flex; */
-        justify-content: center;
+        justify-content: space-around;
+    }
+
+    nav ul li{
+        flex-basis: 25%;
+    }
+
+    footer section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer section div{
+        flex-basis: 90%;
+        margin: 10px 0px;
+    }
+
+    footer section div h3{
+        border-bottom: 3px solid grey;
     }
 }

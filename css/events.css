@@ -55,8 +55,11 @@ main section h2{
 
 
 /* ============ MEDIA QUERIES ============= */
+@media screen and (max-width: 770px){
+    /* nav ul{
+        justify-content: flex-end;
+    } */
 
-@media screen and (max-width: 670px){
     .other-notices div{
         flex-basis: 100%;
     }
