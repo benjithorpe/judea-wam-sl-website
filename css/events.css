@@ -6,16 +6,13 @@ main section h2{
     box-shadow: 1px 1px 1px silver;  
 }
 
-.hide{
-    display: none;
-}
-
 .announcment-wrapper{
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
 }
+
 
 .announcment-item h3{
     font-size: 21px;
@@ -42,6 +39,10 @@ main section h2{
     height: max-content;
     padding: 10px 5px;
     margin: 5px 0px;
+}
+
+.jubilee{
+    flex: 0 1 50%;
 }
 
 .announcment-item ul{

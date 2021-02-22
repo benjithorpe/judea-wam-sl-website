@@ -30,3 +30,23 @@ h2{
     margin-top: 10px;
 }
 
+@media screen and (max-width: 770px){
+    
+    .executive-wrapper div{
+        flex: 0 1 47%;
+    }
+    
+}
+
+@media screen and (max-width: 470px){
+    .executive-wrapper{
+        flex-direction: column;
+    }
+
+    .executive-wrapper div{
+        flex: 0 1 95%;
+        margin: 10px 0px;
+    }
+    
+}
+
