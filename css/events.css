@@ -60,6 +60,10 @@ main section h2{
     .other-notices div{
         flex-basis: 100%;
     }
+
+    .jubilee{
+        flex: 1 1 auto;
+    }
 }
 
 @media screen and (max-width: 470px){
