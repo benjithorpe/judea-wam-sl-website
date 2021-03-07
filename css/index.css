@@ -11,44 +11,28 @@ h1{
 
 main section{
     margin-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-}
-
-/* all divs in the main section */
-main section div{
-    flex: 1 1 40%;
-    /* margin: 5px; */
     padding: 10px;
 }
 
 .summary h3{
     font-size: 25px;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .summary{
+    padding: 10px;
     line-height: 1.5em;
     font-size: 20px;
 }
 
-.image > img{
+main section img{
     width: 100%;
     border-radius: 5px;
     box-shadow: 6px 10px 5px grey;
 } 
-
-
-/* ============ MEDIA QUERIES ============= */
-
-@media screen and (max-width: 770px){
-    main section{
-        margin-top: 0px;
-        flex-direction: column;
-    }
-}
-

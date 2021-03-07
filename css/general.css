@@ -51,7 +51,7 @@ nav ul a:hover{
 /* MAIN CONTENTS */
 main{
     width: 97%;
-    margin: auto;
+    margin: 20px auto;
 }
 
 
@@ -104,7 +104,7 @@ footer ul li{
 
 .social-media ul li a{
     text-decoration: none;
-    color: rgb(135, 140, 212);
+    color: rgb(50, 142, 185);
 }
 
 .social-media ul li a:hover{

@@ -2,30 +2,27 @@ main section h2{
     text-align: center;
     margin: 20px 0px;
     border: 1px solid rgb(224, 224, 233, 0.5);
+    border-radius: 2px;
     padding: 5px 0px;  
-    box-shadow: 1px 1px 1px silver;  
+    box-shadow: 1px 2px 3px silver;  
 }
 
 .announcment-wrapper{
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-
-
-.announcment-item h3{
-    font-size: 21px;
-    margin: 10px 0px;
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 20px;
 }
 
 .announcment-item{
+    height: max-content;
     border-radius: 5px;
-    flex: 1 1 47%;
     padding: 10px;
-    margin: 10px;
     box-shadow: 4px 4px 3px lightgrey, -1px -1px 2px lightgrey;
+}
+
+.announcment-item h3{
+    font-size: 21px;
+    margin-bottom: 20px;
 }
 
 .announcment-item dd{
@@ -41,10 +38,6 @@ main section h2{
     margin: 5px 0px;
 }
 
-.jubilee{
-    flex: 0 1 50%;
-}
-
 .announcment-item ul{
     list-style-position: inside;
 }
@@ -53,21 +46,3 @@ main section h2{
     box-shadow: 2px 2px 2px grey;
     text-indent: 10px;
 }
-
-
-/* ============ MEDIA QUERIES ============= */
-@media screen and (max-width: 770px){
-    .other-notices div{
-        flex-basis: 100%;
-    }
-
-    .jubilee{
-        flex: 1 1 auto;
-    }
-}
-
-@media screen and (max-width: 470px){
-    .announcment-item{
-        flex-basis: 100%;
-    }
-} 
