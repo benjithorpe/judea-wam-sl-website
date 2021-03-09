@@ -46,3 +46,9 @@ main section h2{
     box-shadow: 2px 2px 2px grey;
     text-indent: 10px;
 }
+
+@media screen and (max-width: 770px){
+    .announcment-wrapper{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }   
+}
